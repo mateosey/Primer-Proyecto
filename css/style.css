@@ -1,0 +1,144 @@
+:root{
+    --blanco: #fff;
+    --oscuro: #302d2a;
+    --claro: #EFDECD;
+    --primario: #D68A59;
+    --secundario: #8A3324;
+
+    --fuenteparrafos: 'Cairo', sans-serif;
+    --fuenteheadings: 'Encode Sans SC', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/**Globales**/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5{
+    font-family: var(--fuenteheadings);
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+img{
+    max-width: 70%;
+}
+span{
+    font-size: 1.9rem;
+    font-family: var(--fuenteparrafos);
+}
+/**Header**/
+.header-texto{
+    background-image: url(../img/Laguna\ de\ Iguaque.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center center;
+}
+
+/**main**/
+
+.contenido-blog{
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada__imagen{
+    max-width: 80%;
+    align-items: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+.header-texto{
+    text-align: center;
+}
+.presentacion{
+    background-color: var(--claro);
+}
+/*Navegacion**/
+
+.nav-bg{
+    background-color: var(--secundario);
+    width: 100% auto;
+}
+.navegacion-principal{
+    
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+}
+.navegacion-principal a {
+color: var(--blanco);
+text-decoration: none;
+font-size: 2rem;
+font-weight: bold;
+padding: 1rem;
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.entrada {
+    border-bottom: 1px solid var(--oscuro);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.boton {
+    display: block;
+    font-family: var(--fuenteheading);
+    color: var(--secundario);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
